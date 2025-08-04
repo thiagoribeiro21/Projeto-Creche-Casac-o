@@ -1,0 +1,110 @@
+.testemunhos {
+  h2 {
+    color: var(--cor-principal);
+  }
+  background-color: var(--cor-secundaria);
+  .testemunhos__card {
+    background-color: var(--cor-principal);
+  }
+}
+
+.header .container {
+  margin-top: 0;
+}
+
+.home-image {
+  background-image: url(/images/wallpaper/home-image.jpg);
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 200px;
+  .container {
+    margin-top: 0;
+  }
+}
+.quem-somos__container {
+  gap: var(--grid-gap);
+  h1 {
+    text-align: center;
+    display: none;
+  }
+  p {
+    opacity: 0.7;
+    margin-bottom: var(--grid-gap);
+    font-size: 0.9rem;
+  }
+  .quem-somos__content {
+    gap: var(--grid-gap);
+
+    .quem-somos__content__images {
+      gap: var(--grid-gap);
+
+      align-items: center;
+      justify-content: space-around;
+      img {
+        width: 200px;
+        border-radius: 10%;
+      }
+    }
+  }
+}
+
+.galeria-fotos {
+  .container {
+    flex-wrap: wrap;
+    gap: var(--grid-gap);
+  }
+
+  a {
+    &:hover {
+      transform: scale(1.07);
+      opacity: 0.5;
+      transition: all 1s ease-in-out;
+    }
+    padding: 0;
+    flex-basis: calc(32.5% - (var(--grid-gap-metade)));
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (width > 47em) {
+  .quem-somos__container p {
+    font-size: 1.1rem;
+  }
+
+  .quem-somos__container h1 {
+    display: initial;
+  }
+
+  .galeria-fotos a {
+    flex-basis: calc(24% - (var(--grid-gap-metade)));
+  }
+}
+
+@media screen and (width > 62.5em) {
+  .home-image {
+    background-attachment: fixed;
+    min-height: 200px;
+  }
+
+  .quem-somos__container {
+    gap: var(--grid-margin-dobro);
+  }
+  .galeria-fotos a {
+    flex-basis: calc(18.95% - (var(--grid-gap-metade)));
+  }
+
+  .quem-somos__container .quem-somos__content .quem-somos__content__images img {
+    width: 46%;
+  }
+}
+
+@media screen and (width > 77em) {
+  .galeria-fotos a {
+    flex-basis: calc(15.49% - (var(--grid-gap-metade)));
+  }
+}
