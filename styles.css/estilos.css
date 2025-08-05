@@ -1,3 +1,4 @@
+/* Declaração das variáveis */
 :root {
   --cor-principal: #ffffff;
   --cor-secundaria: #add8e6;
@@ -12,13 +13,14 @@
   --grid-gap-metade: calc(var(--grid-gap) / 2);
   --grid-margin-metade: calc(var(--grid-margin) / 2);
 }
-
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilização das tags */
 html {
   scroll-behavior: smooth;
 }
@@ -73,7 +75,7 @@ body {
 #contatos {
   scroll-margin-top: 150px;
 }
-
+/* Classes para controle de flex-direction */
 .flex-row-sm {
   display: flex;
   flex-direction: row;
@@ -83,7 +85,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+/* Estilização dos elementos do header */
 .header {
   position: sticky;
   top: 0;
@@ -198,7 +200,7 @@ body {
     margin-right: var(--grid-gap);
   }
 }
-
+/* Estilização da pagina inicial. */
 .home__content {
   gap: var(--grid-gap);
   background-image: url(../images/svg/svg-icones/dog-breed-svgrepo-com.svg),
@@ -222,6 +224,7 @@ body {
     width: 83%;
   }
 }
+/* Estilização das demais sections */
 
 .creche {
   background-color: var(--cor-secundaria);
@@ -370,6 +373,7 @@ body {
   }
 }
 
+/* Estilização das tabelas */
 .valores {
   background-color: var(--cor-terciaria);
 
@@ -484,6 +488,8 @@ body {
   text-align: center;
   margin-top: var(--grid-margin);
 }
+
+/* Estilização da seção duvidas em conjunto do JavaScript */
 
 .duvidas {
   background-color: var(--cor-terciaria);
@@ -601,6 +607,8 @@ body {
   }
 }
 
+/* Animação de opacity em conjunto do JavaScript das seções */
+
 .opacity-animation {
   opacity: 0;
   transform: translateY(10%);
@@ -611,8 +619,9 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
+/* Versão responsiva de Tablet. */
 @media screen and (width > 48em) {
+  /* Ajuste de tamanhos, flex-directions e alteração no layout do header. */
   :root {
     --grid-margin: 2.5rem;
     --grid-gap: 1.5rem;
@@ -684,7 +693,7 @@ body {
   #abrir-sidebar {
     display: none;
   }
-
+  /* Mudança na foto do fundo da seção inicial */
   .home {
     background-image: url(../images/wallpaper/8601967.jpg);
     background-size: 80% auto;
@@ -796,8 +805,9 @@ body {
     width: 50px;
   }
 }
-
+/* Versão responsiva de desktop menor. */
 @media screen and (width > 64em) {
+  /* Ajuste de tamanhos, flex-directions e alteração no layout do header. */
   :root {
     --grid-margin: 3rem;
     --grid-gap: 2rem;
@@ -951,8 +961,9 @@ body {
     padding-top: var(--grid-margin);
   }
 }
-
+/* Versão final responsiva para desktops maiores. */
 @media screen and (width > 77em) {
+  /* Ajuste de tamanhos, flex-directions e max-width para centralização. */
   :root {
     --grid-margin: 3.5rem;
     --grid-gap: 2.5rem;
@@ -1000,7 +1011,7 @@ body {
   .creche .container {
     margin-top: 0;
   }
-
+  /* Mudança no wallpaper da pagina inicial */
   .home {
     background-image: url(/images/wallpaper/freepik__upload__80793.jpeg),
       url(/images/wallpaper/8633300.jpg);
@@ -1091,6 +1102,7 @@ body {
       padding: 1.1rem;
     }
   }
+  /* Grid para as tabelas */
 
   .valores .valores__big-container {
     display: grid;

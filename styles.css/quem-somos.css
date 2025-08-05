@@ -22,6 +22,7 @@
   min-height: 200px;
   .container {
     margin-top: 0;
+    padding-bottom: var(--grid-margin-dobro);
   }
 }
 .quem-somos__container {

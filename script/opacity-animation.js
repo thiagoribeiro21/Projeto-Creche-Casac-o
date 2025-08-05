@@ -1,4 +1,6 @@
 (function () {
+  // Cria um IntersectionObserver para animar a opacidade dos elementos quando eles entram na viewport.
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
