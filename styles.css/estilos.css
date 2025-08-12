@@ -106,6 +106,15 @@ body {
   }
 }
 
+.logo a {
+  padding: 0;
+  &:hover {
+    opacity: 0.5;
+    transform: translateX(-8%);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
 .btn {
   border: none;
   background-color: transparent;
