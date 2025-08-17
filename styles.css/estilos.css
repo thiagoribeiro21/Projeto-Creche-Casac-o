@@ -859,6 +859,7 @@ body {
       flex-direction: row;
       margin-top: 0;
       margin-bottom: 0;
+      gap: var(--grid-gap);
       justify-content: space-between;
     }
   }
@@ -892,6 +893,15 @@ body {
     .creche__content__span {
       font-size: 1.3rem;
     }
+  }
+
+  .logo {
+    padding: var(--grid-gap-metade);
+    padding-left: var(--grid-gap);
+  }
+
+  .nav__ul li a {
+    padding: var(--grid-gap);
   }
 
   .nav__ul li a:hover {
